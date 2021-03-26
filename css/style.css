@@ -4,3 +4,148 @@
     margin: 0;
     padding: 0;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.body-wrapper {
+    font-family: 'Nunito', sans-serif;
+    height: 3000px;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.float-left {
+    float: left;
+}
+
+/* list inline */
+.list-inline {
+    list-style: none;
+}
+
+.list-inline > li {
+    display: inline-block;
+    padding: 20px 20px 20px 0;
+}
+.list-inline > li.last-right {
+    padding-right: 0;
+}
+.list-inline a {
+    text-decoration: none;
+}
+.list-inline a:not(.btn) {
+    text-decoration: none;
+    color: #33475B;
+}
+.list-inline a:not(.btn):hover {
+    color: #00A4BD;
+    text-decoration: underline;
+}
+.list-inline .li-separator {      
+    border-left: 1px solid #33475B;
+}
+
+/* size */
+.w-100 {
+    width: 100%;
+}
+.w-50 {
+    width: 50%;
+}
+.w-25 {
+    width: 25%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.align-text-bottom {
+    vertical-align: text-bottom;
+}
+
+/* buttons */
+.btn {
+    padding: 10px;
+    color: white;
+    background-color: #FF7A59;
+    border: 1px solid #FF7A59;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+.btn:not(.btn-no-bg):hover {
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+.btn-no-bg {
+    background-color: unset;
+    color: #FF7A59;
+}
+.btn-no-bg:hover {
+    color: white;
+    background-color: #FF7A59;
+    text-decoration: underline;
+}
+
+/* palette */
+.col-wht {
+    color: white;
+}
+.col-lightgrey {
+    color: #F5F8FA;
+}
+.col-darkgrey {
+    color: #7C98B6;
+}
+.col-lorax {
+    color: #FF7A59;
+}
+.col-aqua {
+    color: #AFEBE4;
+}
+.col-calypso {
+    color: #00A4BD;
+}
+.col-obsidian {
+    color: #33475B;
+}
+
+.bg-wht {
+    background-color: white;
+}
+.bg-aqua {
+    background-color: #AFEBE4;
+}
+.bg-lightgrey {
+    background-color: #F5F8FA;
+}
+.bg-obsidian {
+    background-color: #33475B;
+}
+
+/* Header fixed bar */
+.fixedbar {
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid #33475B;
+}
+
+.fixedbar-left,
+.fixedbar-right {
+    padding: 15px 0;
+}
+
+.fixedbar-right {
+    text-align: right;
+}
