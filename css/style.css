@@ -82,14 +82,18 @@ a {
 .w-100 {
     width: 100%;
 }
-
 .w-70 {
     width: 70%;
 }
-
+.w-60 {
+    width: 60%;
+}
 .w-50 {
     width: 50%;
 }  
+.w-40 {
+    width: 40%;
+}
 .w-30 {
     width: 30%;
 }
@@ -334,7 +338,7 @@ a {
 
 /* community board*/
 .community {
-    padding: 60px 0;
+    padding: 60px 0 120px;
     text-align: center;
     background-image: linear-gradient(to right, #00A4BD , #00BDA5);
 }
@@ -343,6 +347,9 @@ a {
     padding: 30px 0;
 }
 
+.community-board {
+    padding-top: 30px;
+}
 .community-board .row-separator {
     border-top: 1px solid white;
 }
@@ -383,4 +390,54 @@ a {
 .stat span {
     display: inline-block;
     vertical-align: middle;
+}
+
+/* growth section */
+
+.growth {
+    background-image: url("../img/woman.webp");
+    background-size: 20%;
+    background-position: right 280px bottom 80px;
+    background-repeat: no-repeat;
+}
+
+/* customers section */
+.customers {
+    padding: 60px 0;
+}
+
+.customers-text {
+    padding-left: 120px;
+    padding-right: 200px;
+}
+.customers-text h2 {
+    font-size: 3rem
+}
+.customers-text span {
+    font-weight: 700;
+}
+
+/* customer logos */
+.customer-logos {
+    padding-right: 70px;
+}
+
+.logos-row {    
+    line-height: 80px;
+}
+.logos-row .logo-box {
+    padding: 0 15px;
+}
+
+.logos-row .logo-box img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* start growing */
+.start-growing {
+    padding: 30px 105px 20px 0;
+}
+.start-growing p {
+    padding: 40px 0;
 }
