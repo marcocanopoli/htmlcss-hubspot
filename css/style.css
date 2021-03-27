@@ -7,10 +7,23 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 1.1rem;
 }
 
 h1 {
-    font-size: 3.5em;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.3rem;
+}
+
+h3 {
+    font-size: 1.6rem;  
+}
+
+h4 {
+    font-size: 1.2rem;  
 }
 
 a {
@@ -64,8 +77,17 @@ a {
 .w-100 {
     width: 100%;
 }
+.w-70 {
+    width: 70%;
+}
+.w-60 {
+    width: 60%;
+}  
 .w-50 {
     width: 50%;
+}  
+.w-30 {
+    width: 30%;
 }
 .w-25 {
     width: 25%;
@@ -82,8 +104,12 @@ a {
 }
 .small-p {
     padding: 30px 0;
-    font-size: 0.9em;
+    font-size: 0.8rem;
     line-height: 2em;
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
 
 /* .align-text-bottom {
@@ -158,6 +184,7 @@ a {
     position: fixed;
     top: 0;
     border-bottom: 1px solid #33475B;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.05);
 }
 
 .fixedbar-left,
@@ -193,14 +220,14 @@ a {
 .jumbotron {
     background-color: #FFF6EF;
     background-image: url("../img/jumbotron.png");
-    background-size: auto;
+    background-size: 85%;
     background-position-x: right;
     background-repeat: no-repeat;
     border-bottom: 3px solid #33475B;
 }
 
 .jumbo-text {
-    padding: 60px 60px 112px 0
+    padding: 60px 40px 168px 0;
 }
 
 .jumbo-text a {
@@ -213,4 +240,53 @@ a {
 .overview {
     margin-top: 90px;
     border-top: 3px solid #33475B;
+}
+
+/* main header */
+.main-header {
+    margin: 0 auto;
+    padding: 60px 0px 40px;
+    text-align: center;
+}
+
+.main-header img {
+    height: 200px;
+}
+
+/* hubspot CRM */
+.crm {
+    padding: 80px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.05);
+}
+
+.crm-left{
+    text-align: center;
+}
+
+.crm-left img {
+    height: 125px;
+    display: block;
+    margin: 0 auto 30px;
+}
+.crm-left a {
+    display: inline-block;
+}
+
+.crm-right p {
+    padding-right: 200px;
+}
+.crm-right h4 {
+    margin-right: 60px;
+}
+.crm-right h4,
+.crm-right hr {
+    display: inline-block;
+    vertical-align: middle;
+}
+.crm-right i {
+    margin-right: 10px; 
+}
+.crm-right li {
+    padding: 30px 20px 0 0;
 }
