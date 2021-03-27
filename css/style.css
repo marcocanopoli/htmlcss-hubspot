@@ -54,11 +54,16 @@ a {
     box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.05);
 }
 
-/* list inline */
-.list-inline {
+/* list */
+.list {
     list-style: none;
 }
+.list a:not(.btn):hover {
+    color: #00A4BD;
+    text-decoration: underline;
+}
 
+/* list inline */
 .list-inline > li {
     display: inline-block;
     padding: 20px 20px 20px 0;
@@ -70,10 +75,7 @@ a {
     vertical-align: text-bottom;
     color: #33475B;
 }
-.list-inline a:not(.btn):hover {
-    color: #00A4BD;
-    text-decoration: underline;
-}
+
 .list-inline .li-separator {      
     border-left: 1px solid #33475B;
 }
@@ -120,10 +122,6 @@ a {
     text-transform: uppercase;
 }
 
-/* .align-text-bottom {
-    vertical-align: text-bottom;
-} */
-
 /* buttons */
 .btn {
     display: inline-block;
@@ -137,19 +135,30 @@ a {
 .btn-lg {
     padding: 20px 40px;
 }
-.btn:not(.btn-no-bg):hover {
+.btn:hover {
     text-decoration: underline;
     opacity: 0.6;
 }
 
-.btn-no-bg {
+#btn-login {
     background-color: unset;
     color: #FF7A59;
 }
-.btn-no-bg:hover {
+
+#btn-login:hover {
     color: white;
     background-color: #FF7A59;
-    text-decoration: underline;
+    opacity: 1;
+}
+
+.footer-btn {
+    color: #33475B;
+    background-color: white;
+    border: 1px solid white;
+    opacity: 0.6;
+}
+.footer-btn:hover {
+    opacity: 1;
 }
 
 /* palette */
@@ -224,7 +233,6 @@ a {
 }
 
 /* Jumbotron */
-
 .jumbotron {
     background-color: #FFF6EF;
     background-image: url("../img/jumbotron.png");
@@ -393,7 +401,6 @@ a {
 }
 
 /* growth section */
-
 .growth {
     background-image: url("../img/woman.webp");
     background-size: 20%;
@@ -440,4 +447,64 @@ a {
 }
 .start-growing p {
     padding: 40px 0;
+}
+
+/* footer */
+.footer-links {
+    padding-top: 50px;
+}
+
+.links-block h4 {
+    padding-bottom: 30px;
+}
+
+.links-block a {
+    display: inline-block;
+    opacity: 0.6;
+}
+.links-block a:not(.btn) {
+    padding-bottom: 20px;
+    color: white;
+}
+.links-block a:not(.btn):hover {
+    color: white;
+    text-decoration: underline;
+    opacity: 1;
+}
+.links-block .btn {    
+    margin-bottom: 20px;
+}
+.links-block i {    
+    margin-right: 30px;
+}
+
+/* languages */
+.lang-bar {
+    margin: 60px auto 0;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+
+footer .list-inline li {
+    padding-top: 0;
+}
+.list-inline.legal a,
+.list-inline.lang a {
+    color: white;
+    opacity: 0.6;
+}
+
+.list-inline.legal a:hover,
+.list-inline.lang a:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+/* footer bottom */
+.footer-bottom {
+    padding: 40px 0;
+}
+
+.footer-bottom .bottom-right {
+    text-align: right;
 }
