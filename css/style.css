@@ -48,6 +48,11 @@ a {
 .float-left {
     float: left;
 }
+.box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.05);
+}
 
 /* list inline */
 .list-inline {
@@ -77,12 +82,11 @@ a {
 .w-100 {
     width: 100%;
 }
+
 .w-70 {
     width: 70%;
 }
-.w-60 {
-    width: 60%;
-}  
+
 .w-50 {
     width: 50%;
 }  
@@ -118,6 +122,7 @@ a {
 
 /* buttons */
 .btn {
+    display: inline-block;
     padding: 10px;
     color: white;
     background-color: #FF7A59;
@@ -184,12 +189,11 @@ a {
     position: fixed;
     top: 0;
     border-bottom: 1px solid #33475B;
-    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
 }
 
-.fixedbar-left,
-.fixedbar-right {
-    padding: 15px 0;
+.fixedbar-left li {
+    padding-top: 32px;
 }
 
 .fixedbar-right {
@@ -198,16 +202,16 @@ a {
 
 /* Header menu */
 .header-menu {
-    margin-top: 93px;
+    margin-top: 84px;
 }
 
 .logo {
     height: 30px;
-    margin-top: 31px;
+    margin-top: 28px;
 }
 
 .headermenu-right {
-    padding: 15px 0;
+    padding: 12px 0;
     text-align: right;
 }
 
@@ -239,25 +243,27 @@ a {
 /* overview */
 .overview {
     margin-top: 90px;
+    padding: 60px 0;
     border-top: 3px solid #33475B;
 }
 
 /* main header */
 .main-header {
     margin: 0 auto;
-    padding: 60px 0px 40px;
     text-align: center;
 }
 
 .main-header img {
     height: 200px;
 }
+.main-header p {
+    padding-bottom: 0;
+}
 
 /* hubspot CRM */
 .crm {
-    padding: 80px 0;
-    border-radius: 10px;
-    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.05);
+    padding: 80px 0;        
+    margin: 60px 0;
 }
 
 .crm-left{
@@ -289,4 +295,92 @@ a {
 }
 .crm-right li {
     padding: 30px 20px 0 0;
+}
+
+/* hubs */
+.hubs {
+    text-align: center;
+}
+
+.hub-block {
+    padding: 30px 45px;
+}
+
+.hub-block img {
+    height: 125px;
+    margin: 0 auto 20px;
+}
+.hub-block p {
+    height: 250px;
+}
+.hub-block h4 {
+    padding: 45px 0;
+}
+.hub-block ul {
+    padding-bottom: 60px;
+    list-style: none;
+    text-align: left;
+}
+.hub-block i {
+    margin-right: 10px; 
+}
+.hub-block a {
+    display: inline-block;
+}
+
+.middle-block {
+    margin: 0 5%;
+}
+
+/* community board*/
+.community {
+    padding: 60px 0;
+    text-align: center;
+    background-image: linear-gradient(to right, #00A4BD , #00BDA5);
+}
+
+.community-title p {
+    padding: 30px 0;
+}
+
+.community-board .row-separator {
+    border-top: 1px solid white;
+}
+
+/* board item */
+.board-item {
+    position: relative;
+    padding: 30px 0;
+}
+
+.item-separator {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    height: 100%;
+    border-left: 1px solid white;
+}
+
+.board-item img {
+    height: 33px;
+    margin: 0 auto 20px;
+}
+
+.board-item p {
+    padding: 15px 0 0;
+}
+
+.stat {
+    line-height: 2.3rem;
+}
+.stat h2 {
+    font-weight: 900;
+}
+.stat span {
+    font-size: 1.6rem;
+}
+.stat h2, 
+.stat span {
+    display: inline-block;
+    vertical-align: middle;
 }
