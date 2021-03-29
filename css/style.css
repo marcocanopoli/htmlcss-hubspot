@@ -10,6 +10,11 @@ html {
     font-size: 1.1rem;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #33475B;
+}
+
 h1 {
     font-size: 3.5rem;
 }
@@ -28,11 +33,6 @@ h4 {
 
 a {
     text-decoration: none;
-}
-
-.body-wrapper {
-    font-family: 'Roboto', sans-serif;
-    color: #33475B;
 }
 
 .container {
@@ -120,6 +120,10 @@ a {
 
 .uppercase {
     text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
 }
 
 /* buttons */
@@ -262,7 +266,6 @@ a {
 /* main header */
 .main-header {
     margin: 0 auto;
-    text-align: center;
 }
 
 .main-header img {
@@ -276,10 +279,6 @@ a {
 .crm {
     padding: 80px 0;        
     margin: 60px 0;
-}
-
-.crm-left{
-    text-align: center;
 }
 
 .crm-left img {
@@ -310,10 +309,6 @@ a {
 }
 
 /* hubs */
-.hubs {
-    text-align: center;
-}
-
 .hub-block {
     padding: 30px 45px;
 }
@@ -347,7 +342,6 @@ a {
 /* community board*/
 .community {
     padding: 60px 0 120px;
-    text-align: center;
     background-image: linear-gradient(to right, #00A4BD , #00BDA5);
 }
 
@@ -482,7 +476,6 @@ a {
 .lang-bar {
     margin: 60px auto 0;
     border-bottom: 1px solid white;
-    text-align: center;
 }
 
 footer .list-inline li {
@@ -504,7 +497,11 @@ footer .list-inline li {
 .footer-bottom {
     padding: 40px 0;
 }
+.footer-bottom img {
+    opacity: 0.6;
+}
 
 .footer-bottom .bottom-right {
     text-align: right;
 }
+
