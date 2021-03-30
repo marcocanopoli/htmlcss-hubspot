@@ -32,7 +32,11 @@ h4 {
 }
 
 a {
-    text-decoration: none;
+    display: inline-block;
+    text-decoration: none;    
+}
+a:hover {
+    text-decoration: underline;
 }
 
 .container {
@@ -48,6 +52,7 @@ a {
 .float-left {
     float: left;
 }
+
 .box {
     background-color: white;
     border-radius: 10px;
@@ -58,9 +63,29 @@ a {
 .list {
     list-style: none;
 }
-.list a:not(.btn):hover {
+
+/* header lists */
+header .list a:not(.btn) {
+    color: #33475B;
+}
+
+header .list a:not(.btn):hover {
     color: #00A4BD;
-    text-decoration: underline;
+}
+
+/* footer lists */
+footer a:not(.btn):hover {
+    color: white;
+    opacity: 1;
+}
+
+footer .list-inline li {
+    padding-top: 0;
+}
+
+footer .list-inline a {
+    color: white;
+    opacity: 0.6;
 }
 
 /* list inline */
@@ -73,14 +98,50 @@ a {
 }
 .list-inline a:not(.btn) { 
     vertical-align: text-bottom;
-    color: #33475B;
 }
 
 .list-inline .li-separator {      
     border-left: 1px solid #33475B;
 }
 
-/* size */
+/* buttons */
+.btn {
+    padding: 10px;
+    color: white;
+    background-color: #FF7A59;
+    border: 1px solid #FF7A59;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.btn-lg {
+    padding: 20px 40px;
+}
+.btn:hover {
+    opacity: 0.6;
+}
+
+#btn-login {
+    background-color: unset;
+    color: #FF7A59;
+}
+
+#btn-login:hover {
+    color: white;
+    background-color: #FF7A59;
+    opacity: 1;
+}
+
+footer .btn {
+    color: #33475B;
+    background-color: white;
+    border: 1px solid white;
+    opacity: 0.6;
+}
+footer .btn:hover {
+    opacity: 1;
+}
+
+/* sizes */
 .w-100 {
     width: 100%;
 }
@@ -125,47 +186,17 @@ a {
 .text-center {
     text-align: center;
 }
+.text-right {
+    text-align: right;
+}
 
-/* buttons */
-.btn {
+.v-middle {
     display: inline-block;
-    padding: 10px;
-    color: white;
-    background-color: #FF7A59;
-    border: 1px solid #FF7A59;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-.btn-lg {
-    padding: 20px 40px;
-}
-.btn:hover {
-    text-decoration: underline;
-    opacity: 0.6;
+    vertical-align: middle;
 }
 
-#btn-login {
-    background-color: unset;
-    color: #FF7A59;
-}
 
-#btn-login:hover {
-    color: white;
-    background-color: #FF7A59;
-    opacity: 1;
-}
-
-.footer-btn {
-    color: #33475B;
-    background-color: white;
-    border: 1px solid white;
-    opacity: 0.6;
-}
-.footer-btn:hover {
-    opacity: 1;
-}
-
-/* palette */
+/* colors palette */
 .col-white {
     color: white;
 }
@@ -214,9 +245,6 @@ a {
     padding-top: 32px;
 }
 
-.fixedbar-right {
-    text-align: right;
-}
 
 /* Header menu */
 .header-menu {
@@ -230,7 +258,6 @@ a {
 
 .headermenu-right {
     padding: 12px 0;
-    text-align: right;
 }
 
 .headermenu-right li i {
@@ -249,10 +276,6 @@ a {
 
 .jumbo-text {
     padding: 60px 40px 168px 0;
-}
-
-.jumbo-text a {
-    display: inline-block;
 }
 
 /* main */
@@ -287,20 +310,12 @@ a {
     display: block;
     margin: 0 auto 30px;
 }
-.crm-left a {
-    display: inline-block;
-}
 
 .crm-right p {
     padding-right: 200px;
 }
 .crm-right h4 {
     margin-right: 60px;
-}
-.crm-right h4,
-.crm-right hr {
-    display: inline-block;
-    vertical-align: middle;
 }
 .crm-right i {
     margin-right: 10px; 
@@ -326,14 +341,10 @@ a {
 }
 .hub-block ul {
     padding-bottom: 60px;
-    list-style: none;
     text-align: left;
 }
 .hub-block i {
     margin-right: 10px; 
-}
-.hub-block a {
-    display: inline-block;
 }
 
 .middle-block {
@@ -390,8 +401,7 @@ a {
 .stat span {
     font-size: 1.6rem;
 }
-.stat h2, 
-.stat span {
+.stat * {
     display: inline-block;
     vertical-align: middle;
 }
@@ -453,19 +463,12 @@ a {
 .links-block h4 {
     padding-bottom: 30px;
 }
-
 .links-block a {
-    display: inline-block;
     opacity: 0.6;
 }
 .links-block a:not(.btn) {
     padding-bottom: 20px;
     color: white;
-}
-.links-block a:not(.btn):hover {
-    color: white;
-    text-decoration: underline;
-    opacity: 1;
 }
 .links-block .btn {    
     margin-bottom: 20px;
@@ -480,21 +483,6 @@ a {
     border-bottom: 1px solid white;
 }
 
-footer .list-inline li {
-    padding-top: 0;
-}
-.list-inline.legal a,
-.list-inline.lang a {
-    color: white;
-    opacity: 0.6;
-}
-
-.list-inline.legal a:hover,
-.list-inline.lang a:hover {
-    text-decoration: underline;
-    opacity: 1;
-}
-
 /* footer bottom */
 .footer-bottom {
     padding: 40px 0;
@@ -502,8 +490,3 @@ footer .list-inline li {
 .footer-bottom img {
     opacity: 0.6;
 }
-
-.footer-bottom .bottom-right {
-    text-align: right;
-}
-
